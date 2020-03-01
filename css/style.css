@@ -1,0 +1,16 @@
+@@charset "UTF-8";
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+body {
+  background: #ccffff;
+  color: #333;
+  text-align: center;
+  line-height: 1.5;
+}
+.contents {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
