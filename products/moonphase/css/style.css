@@ -1,0 +1,239 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%;
+}
+body {
+  -webkit-text-size-adjust: 100%;
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  color: #000;
+  text-align: center;
+  position: relative;
+  min-height: 100vh;
+}
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-feature-settings: "palt";
+  font-style: normal;
+}
+ol,ul {
+  list-style: none;
+}
+input,
+input[type="submit"],
+input[type="button"],
+textarea,
+button {
+	-webkit-appearance: none;
+	border-radius: 0;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  font-size: 16px;
+}
+img {
+	width: auto;
+	max-width: 100%;
+	vertical-align: top;
+  outline:none;
+  border-style:none;
+}
+a{
+    color:blue;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+a:visited{
+    color:blue;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+a:hover {
+    color: #F5A862;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.nw {
+	white-space: nowrap;
+	display: inline-block;
+}
+
+
+/* container */
+.container {
+  background: #666666;
+  color: #ffffff;
+  position: relative;
+  height: 100%;
+}
+/* header */
+.header {
+  display: inline-block;;
+  padding: 2em 0;
+  font-size: 2rem;;
+}
+
+/* footer */
+.footer {
+  font-size: 0.8rem;
+  padding: 3em 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255,255,255,0.25);
+}
+
+/* conts */
+.conts {
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+.conts .ttl {
+  margin-bottom: 2em;;
+}
+.conts .moonphase {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.conts .moonphase > li {
+  width: 14%;
+  text-align: center;;
+}
+.conts .moonphase .moon {
+  width: 90px;
+  height: 90px;
+	border-radius: 50%;
+	overflow: hidden;
+	position: relative;
+  margin: 0 auto;;
+}
+
+.conts .moonphase .moon:before,
+.conts .moonphase .moon:after {
+	content: '';
+	display: block;
+	height: 100%;
+	position: absolute;
+}
+.conts .moonphase .moon:before {
+	border-top-right-radius: 90px 200%;
+	border-bottom-right-radius: 90px 200%;
+	left: 49%;
+}
+.conts .moonphase .moon:after {
+	border-top-right-radius: 90px 200%;
+	border-bottom-right-radius: 90px 200%;
+	right: 49%;
+}
+
+/* 月齢 05 */
+.conts .moonphase .phase05 .moon  {
+	background-image: linear-gradient(to left, #ff0 0, #ff0 50%, #000 50%, #000 100%);
+}
+.conts .moonphase .phase05 .moon:before {
+	background-color: #000;
+	width: 33.333%;
+}
+
+/* 月齢 25 */
+.conts .moonphase .phase25 .moon  {
+	background-image: linear-gradient(to right, #ff0 0, #ff0 50%, #000 50%, #000 100%);
+}
+.conts .moonphase .phase25 .moon:before {
+	background-color: #ff0;
+	width: 33.333%;
+}
+
+
+/* 月齢 11 */
+.conts .moonphase .phase11 .moon  {
+	background-image: linear-gradient(to left, #ff0 0, #ff0 50%, #000 50%, #000 100%);
+}
+.conts .moonphase .phase11 .moon:after {
+	background-color: #ff0;
+	width: 33.333%;
+  transform: rotate(180deg);
+}
+
+/* 月齢 19 */
+.conts .moonphase .phase19 .moon  {
+	background-image: linear-gradient(to right, #ff0 0, #ff0 50%, #000 50%, #000 100%);
+}
+.conts .moonphase .phase19 .moon:before {
+	background-color: #ff0;
+	width: 33.333%;
+}
+
+
+
+
+/* 月齢 15 */
+.conts .moonphase .phase15 .moon  {
+	background-image: linear-gradient(to right, #ff0 0, #ff0 50%, #ff0 50%, #ff0 100%);
+}
+
+
+
+
+/* 月齢 07 */
+.conts .moonphase .phase07 .moon  {
+	background-image: linear-gradient(to left, #ff0 0, #ff0 50%, #000 50%, #000 100%);
+}
+
+/* 月齢 22 */
+.conts .moonphase .phase22 .moon  {
+	background-image: linear-gradient(to right, #ff0 0, #ff0 50%, #000 50%, #000 100%);
+}
+
+
+
+
+
+/* footer */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.dispSP {
+  display: block;
+}
+.dispPC {
+  display: none;
+}
+
+
+@media screen and (min-width:769px), print {
+
+
+
+  .dispSP {
+	display: none;
+  }
+  .dispPC {
+    display: block;
+  }
+}
